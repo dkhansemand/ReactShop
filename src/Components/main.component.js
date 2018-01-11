@@ -6,9 +6,7 @@ import BasketView from './basket.component'
 import ProductList from './Products/productList.component'
 
 class MainComponent extends Component {
-    constructor(props){
-        super(props)
-    }
+   
     
 
     render(){

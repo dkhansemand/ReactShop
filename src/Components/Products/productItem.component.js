@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Redirect } from 'react-router-dom'
-import { Button, Card, CardTitle, CardActions, CardText, FontIcon} from 'react-md'
+import { Button, Card, CardTitle, CardActions, CardText} from 'react-md'
 class ProductItem extends Component {
     constructor(props){
         super(props)

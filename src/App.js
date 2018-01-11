@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Layout, Drawer, Navigation } from 'react-mdl'
 import './App.css';
 import './material.css';
 import './material';

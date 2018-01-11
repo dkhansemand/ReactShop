@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Router, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { Badge, Header, HeaderRow, Icon, Navigation, Textfield } from 'react-mdl'
 class Navbar extends Component {
     constructor(props){

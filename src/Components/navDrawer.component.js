@@ -6,10 +6,7 @@ class NavDrawer extends Component {
         return (
             <Drawer title="Title">
                 <Navigation>
-                    <a href="#">Link</a>
-                    <a href="#">Link</a>
-                    <a href="#">Link</a>
-                    <a href="#">Link</a>
+                
                 </Navigation>
             </Drawer>
         )
