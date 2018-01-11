@@ -39,7 +39,7 @@ class BasketView extends Component
                     rows={Basket.products}>
                     <TableHeader name="title" tooltip="Product name">Produkt navn</TableHeader>
                     <TableHeader numeric name="qnty" tooltip="Antal">Antal</TableHeader>
-                    <TableHeader numeric name="price" cellFormatter={(price,self) =>`\DKK ${price.toFixed(2)*self.qnty}` } tooltip="Pris (efter antal)">Pris</TableHeader>
+                    <TableHeader numeric name="price" cellFormatter={(price,self) =>`DKK ${price.toFixed(2)*self.qnty}` } tooltip="Pris (efter antal)">Pris</TableHeader>
                 </DataTable>
             </div>
         )
