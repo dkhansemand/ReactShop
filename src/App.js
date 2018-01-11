@@ -24,11 +24,11 @@ class App extends Component {
 
   render() {
     return (
-      <Layout>
+      <div>
         <Navbar basket={this.state.items} />
         
         <MainComponent items={this.addItem.bind(this)}/>
-      </Layout>
+      </div>
     );
   }
 }
