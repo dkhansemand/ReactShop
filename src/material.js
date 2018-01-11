@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 ;(function() {
 
 
@@ -436,6 +437,7 @@ componentHandler = (function() {
  *   widget: (string|boolean|undefined)
  * }}
  */
+// eslint-disable-next-line
 componentHandler.ComponentConfigPublic;  // jshint ignore:line
 
 /**
@@ -450,6 +452,7 @@ componentHandler.ComponentConfigPublic;  // jshint ignore:line
  *   callbacks: !Array<function(!HTMLElement)>
  * }}
  */
+// eslint-disable-next-line
 componentHandler.ComponentConfig;  // jshint ignore:line
 
 /**
@@ -464,6 +467,7 @@ componentHandler.ComponentConfig;  // jshint ignore:line
  *   widget: string
  * }}
  */
+// eslint-disable-next-line
 componentHandler.Component;  // jshint ignore:line
 
 // Export all symbols, for the benefit of Closure compiler.
@@ -1389,10 +1393,11 @@ MaterialMenu.prototype.handleItemClick_ = function (evt) {
 MaterialMenu.prototype.applyClip_ = function (height, width) {
     if (this.element_.classList.contains(this.CssClasses_.UNALIGNED)) {
         // Do not clip.
+        // eslint-disable-next-line
         this.element_.style.clip = '';
     } else if (this.element_.classList.contains(this.CssClasses_.BOTTOM_RIGHT)) {
         // Clip to the top right corner of the menu.
-        this.element_.style.clip = 'rect(0 ' + width + 'px ' + '0 ' + width + 'px)';
+        this.element_.style.clip = `rect(0 ${width}px 0 ${width}px)`;
     } else if (this.element_.classList.contains(this.CssClasses_.TOP_LEFT)) {
         // Clip to the bottom left corner of the menu.
         this.element_.style.clip = 'rect(' + height + 'px 0 ' + height + 'px 0)';
@@ -3945,18 +3950,19 @@ MaterialRipple.prototype.init = function () {
          * Sets the ripple styles.
          * @param  {boolean} start whether or not this is the start frame.
          */
+        // eslint-disable-next-line
             this.setRippleStyles = function (start) {
                 if (this.rippleElement_ !== null) {
                     var transformString;
                     var scale;
-                    var size;
+                    //var size;
                     var offset = 'translate(' + this.x_ + 'px, ' + this.y_ + 'px)';
                     if (start) {
                         scale = this.Constant_.INITIAL_SCALE;
-                        size = this.Constant_.INITIAL_SIZE;
+                        //size = this.Constant_.INITIAL_SIZE;
                     } else {
                         scale = this.Constant_.FINAL_SCALE;
-                        size = this.rippleSize_ + 'px';
+                        //size = this.rippleSize_ + 'px';
                         if (recentering) {
                             offset = 'translate(' + this.boundWidth / 2 + 'px, ' + this.boundHeight / 2 + 'px)';
                         }
