@@ -15,6 +15,7 @@ class App extends Component {
     this.state = {
       items: 0
     }
+    
   }
 
   addItem(item){

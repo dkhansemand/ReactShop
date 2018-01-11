@@ -8,6 +8,10 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import { BrowserRouter } from 'react-router-dom'
 
+window.Basket = {
+    products: []
+  }
+
 ReactDOM.render( (
     <BrowserRouter>
         <App />

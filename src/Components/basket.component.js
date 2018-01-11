@@ -1,16 +1,17 @@
 import React, { Component } from 'react'
 import { DataTable, TableHeader } from 'react-mdl'
-import Basket from '../basket'
+
 class BasketView extends Component
 {
     constructor(props)
     {
         super(props)
-        console.log('Cart: ', Basket)
+        
         this.state = {
             hideActions: true,
             selectedItemsId: []
         }
+        
     }
 
     render()
@@ -36,7 +37,7 @@ class BasketView extends Component
                     }}
                     shadow={2}
                     rowKeyColumn="id"
-                    rows={Basket.products}>
+                    rows={window.Basket.products}>
                     <TableHeader name="title" tooltip="Product name">Produkt navn</TableHeader>
                     <TableHeader numeric name="qnty" tooltip="Antal">Antal</TableHeader>
                     <TableHeader numeric name="price" cellFormatter={(price,self) =>`DKK ${price.toFixed(2)*self.qnty}` } tooltip="Pris (efter antal)">Pris</TableHeader>
